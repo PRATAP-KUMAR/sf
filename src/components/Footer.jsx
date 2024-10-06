@@ -6,25 +6,41 @@ import { MdOutlineLocalLibrary } from "react-icons/md";
 const Footer = () => {
     return (
         <footer>
-            <div className="bg-[#d7d7d7] fixed bottom-0 z-200 min-h-[64px] flex justify-around border w-full">
-                <div className="items-center justify-center flex flex-col">
+            <div className="bg-[#d7d7d7] fixed bottom-0 z-200 h-16 items-center flex justify-around border w-full">
+                <a className="items-center justify-center flex flex-col"
+                    href="https://pratap.live"
+                    target="_blank"
+                    rel="noreferrer"
+                >
                     <LiaSearchPlusSolid size={24} />
                     <p>Home</p>
-                </div>
-                <div className="items-center justify-center flex flex-col">
+                </a>
+                <a className="items-center justify-center flex flex-col"
+                    href="https://pratap.live"
+                    target="_blank"
+                    rel="noreferrer"
+                >
                     <VscGlobe size={24} />
                     <p>Discover</p>
-                </div>
-                <div className="items-center justify-center flex flex-col">
+                </a>
+                <a className="items-center justify-center flex flex-col"
+                    href="https://pratap.live"
+                    target="_blank"
+                    rel="noreferrer"
+                >
                     <MdOutlineLocalLibrary size={24} />
                     <p>Library</p>
-                </div>
-                <div className="items-center justify-center flex flex-col">
+                </a>
+                <a className="items-center justify-center flex flex-col"
+                    href="https://pratap.live"
+                    target="_blank"
+                    rel="noreferrer"
+                >
                     <FaSignInAlt size={24} />
                     <p>Sign in</p>
-                </div>
-            </div>
-        </footer>
+            </a>
+        </div>
+        </footer >
     )
 }
 

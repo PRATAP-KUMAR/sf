@@ -1,4 +1,10 @@
 import { useState } from "react";
+import { CiStar } from "react-icons/ci";
+import { GiArtificialIntelligence } from "react-icons/gi";
+import { HiOutlineCurrencyDollar } from "react-icons/hi";
+import { MdOutlineColorLens } from "react-icons/md";
+import { LiaMedalSolid } from "react-icons/lia";
+import { PiMonitorBold } from "react-icons/pi";
 
 const Navbar = () => {
 
@@ -12,35 +18,47 @@ const Navbar = () => {
         <div className="text-nowrap sticky top-0 z-50 bg-white text-sm flex gap-2 p-2 pb-0 items-center h-16 overflow-x-auto [&::-webkit-scrollbar]:hidden">
             <button
                 id="top"
-                className={`${selected === 'top' ? 'bg-green-500/20' : null} px-4 py-2 rounded-lg hover:text-black/20`}
+                className={`${selected === 'top' ? 'bg-green-500/20' : null} px-4 flex py-2 rounded-lg hover:text-black/20 inline-flex gap-1 items-center`}
                 onClick={handleFilter}
-            >Top</button>
+            >
+                <CiStar fontSize={20} /><span className="text-xs">Top</span>
+            </button>
             <button
                 id="ts"
-                className={`${selected === 'ts' ? 'bg-green-500/20' : null} px-4 py-2 rounded-lg hover:text-black/20`}
+                className={`${selected === 'ts' ? 'bg-green-500/20' : null} px-4 py-2 rounded-lg hover:text-black/20 inline-flex gap-1 items-center`}
                 onClick={handleFilter}
-            >Tech & Science</button>
+            >
+                <GiArtificialIntelligence fontSize={20} /><span className="text-xs">Tech & Science</span>
+            </button>
             <button
                 id="fin"
-                className={`${selected === 'fin' ? 'bg-green-500/20' : null} px-4 py-2 rounded-lg hover:text-black/20`}
+                className={`${selected === 'fin' ? 'bg-green-500/20' : null} px-4 py-2 rounded-lg hover:text-black/20 inline-flex gap-1 items-center`}
                 onClick={handleFilter}
-            >Finance</button>
+            >
+                <HiOutlineCurrencyDollar fontSize={20} /><span className="text-xs">Finance</span>
+            </button>
             <button
                 id='ac'
-                className={`${selected === 'ac' ? 'bg-green-500/20' : null} px-4 py-2 rounded-lg hover:text-black/20`}
+                className={`${selected === 'ac' ? 'bg-green-500/20' : null} px-4 py-2 rounded-lg hover:text-black/20 inline-flex gap-1 items-center`}
                 onClick={handleFilter}
-            >Arts & Cultrure </button>
+            >
+                <MdOutlineColorLens fontSize={20} /><span className="text-xs">Arts & Culture</span>
+            </button>
             <button
                 id="sports"
-                className={`${selected === 'sports' ? 'bg-green-500/20' : null} px-4 py-2 rounded-lg hover:text-black/20`}
+                className={`${selected === 'sports' ? 'bg-green-500/20' : null} px-4 py-2 rounded-lg hover:text-black/20 inline-flex gap-1 items-center`}
                 onClick={handleFilter}
-            >Sports</button>
+            >
+                <LiaMedalSolid fontSize={20} /><span className="text-xs">Sports</span>
+            </button>
             <button
                 id="ett"
-                className={`${selected === 'ett' ? 'bg-green-500/20' : null} px-4 py-2 rounded-lg hover:text-black/20`}
+                className={`${selected === 'ett' ? 'bg-green-500/20' : null} px-4 py-2 rounded-lg hover:text-black/20 inline-flex gap-1 items-center`}
                 onClick={handleFilter}
-            >Entertainment</button>
-        </div>
+            >
+                <PiMonitorBold fontSize={20} /><span className="text-xs"></span>Entertainment
+            </button>
+        </div >
     )
 }
 

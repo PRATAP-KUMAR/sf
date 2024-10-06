@@ -4,7 +4,7 @@ const cards = [
         img: "https://picsum.photos/id",
         heading: 'Heading',
         description: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum',
-        user: 'user name'
+        user: 'user name',
     },
     {
         id: 2,
