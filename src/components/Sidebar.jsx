@@ -6,7 +6,7 @@ import { MdOutlineLocalLibrary } from "react-icons/md";
 
 const Sidebar = () => {
     return (
-        <div className="hidden sticky top-0 h-screen left-0 h-screen desktop:flex flex-col justify-between desktop:flex-none w-[220px] bg-[#d1d1d1] p-5">
+        <div className="hidden z-30 sticky top-0 h-screen left-0 h-screen desktop:flex flex-col justify-between desktop:flex-none w-[220px] bg-[#d1d1d1] p-5">
             <div className="flex flex-col gap-8">
                 <div className="flex items-center justify-between">
                     <div className="flex gap-2 items-center">
