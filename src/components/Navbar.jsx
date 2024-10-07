@@ -16,7 +16,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className="text-nowrap sticky top-0 z-50 bg-white text-sm flex gap-2 items-center h-16 overflow-x-auto [&::-webkit-scrollbar]:hidden max-w-3xl mx-auto">
+        <div className="text-nowrap sticky top-0 z-10 bg-white text-sm flex gap-2 items-center h-16 overflow-x-auto [&::-webkit-scrollbar]:hidden max-w-3xl mx-auto">
             <button
                 id="top"
                 className={`${selected === 'top' ? 'bg-green-500/20' : null} p-2 flex rounded-lg hover:text-black/20 inline-flex gap-1 items-center`}

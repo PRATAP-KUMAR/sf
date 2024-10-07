@@ -6,15 +6,17 @@ import Footer from "../components/Footer";
 
 const Discover = () => (
   <div className="p-2">
-    <Header />
-    <Navbar />
-    <section className="max-w-3xl mx-auto pb-[75px] desktop:pb-5 grid desktop:grid-cols-3 gap-4">
-      {
-        cards.map(card => (
-          <Card card={card} key={card.id} />
-        ))
-      }
-    </section>
+    <div>
+      <Header />
+      <Navbar />
+      <section className="max-w-3xl mx-auto pb-[75px] desktop:pb-5 grid desktop:grid-cols-3 gap-4">
+        {
+          cards.map(card => (
+            <Card card={card} key={card.id} />
+          ))
+        }
+      </section>
+    </div>
     <Footer />
   </div>
 )
