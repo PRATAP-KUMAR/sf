@@ -28,6 +28,10 @@
   [type='radio'] {
     @apply border-2 text-red-500 focus:ring focus:ring-["black"]
   }
+
+  Link img {
+    @apply border-2 border-red-500
+  }
 }
 
 @layer components {
@@ -39,3 +43,4 @@
     @apply max-w-6xl min-h-[100vh] bg-color-2 mx-auto flex items-center justify-center
   }
 }
+

@@ -5,6 +5,7 @@ import { HiOutlineCurrencyDollar } from "react-icons/hi";
 import { MdOutlineColorLens } from "react-icons/md";
 import { LiaMedalSolid } from "react-icons/lia";
 import { PiMonitorBold } from "react-icons/pi";
+import PersonalizeButton from "./PersonalizeButton";
 
 const Navbar = () => {
 
@@ -15,10 +16,10 @@ const Navbar = () => {
     }
 
     return (
-        <div className="text-nowrap sticky top-0 z-50 bg-white text-sm flex gap-2 p-2 pb-0 items-center h-16 overflow-x-auto [&::-webkit-scrollbar]:hidden">
+        <div className="text-nowrap sticky top-0 z-50 bg-white text-sm flex gap-2 items-center h-16 overflow-x-auto [&::-webkit-scrollbar]:hidden max-w-3xl mx-auto">
             <button
                 id="top"
-                className={`${selected === 'top' ? 'bg-green-500/20' : null} px-4 flex py-2 rounded-lg hover:text-black/20 inline-flex gap-1 items-center`}
+                className={`${selected === 'top' ? 'bg-green-500/20' : null} p-2 flex rounded-lg hover:text-black/20 inline-flex gap-1 items-center`}
                 onClick={handleFilter}
             >
                 <CiStar fontSize={20} /><span className="text-xs">Top</span>
@@ -58,6 +59,9 @@ const Navbar = () => {
             >
                 <PiMonitorBold fontSize={20} /><span className="text-xs"></span>Entertainment
             </button>
+            <div className="hidden desktop:block">
+                <PersonalizeButton />
+            </div>
         </div >
     )
 }
