@@ -16,10 +16,10 @@ const Navbar = () => {
     }
 
     return (
-        <div className="text-nowrap sticky top-0 z-10 bg-white text-sm flex gap-2 items-center h-16 overflow-x-auto [&::-webkit-scrollbar]:hidden max-w-3xl mx-auto">
+        <div className="border border-teal-500 sticky top-0 text-nowrap z-10 flex-nowrap bg-white text-sm flex flex-shrink gap-2 items-center h-16 overflow-x-auto [&::-webkit-scrollbar]:hidden">
             <button
                 id="top"
-                className={`${selected === 'top' ? 'bg-green-500/20' : null} p-2 flex rounded-lg hover:text-black/20 inline-flex gap-1 items-center`}
+                className={`${selected === 'top' ? 'bg-green-500/20' : null} px-4 py-2 rounded-lg hover:text-black/20 inline-flex gap-1 items-center`}
                 onClick={handleFilter}
             >
                 <CiStar fontSize={20} /><span className="text-xs">Top</span>

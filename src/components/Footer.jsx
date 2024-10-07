@@ -6,7 +6,7 @@ import { MdOutlineLocalLibrary } from "react-icons/md";
 const Footer = () => {
     return (
         <footer className="desktop:hidden">
-            <div className="bg-[#d7d7d7] fixed bottom-0 z-10 h-16 items-center flex justify-around border w-full">
+            <div className="bg-[#d7d7d7] fixed bottom-0 left-0 z-50 h-16 items-center flex justify-around border w-full">
                 <a className="items-center justify-center flex flex-col"
                     href="https://pratap.live"
                     target="_blank"
@@ -38,8 +38,8 @@ const Footer = () => {
                 >
                     <FaSignInAlt size={24} />
                     <p>Sign in</p>
-            </a>
-        </div>
+                </a>
+            </div>
         </footer >
     )
 }

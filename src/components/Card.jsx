@@ -4,15 +4,15 @@ import { CiBookmark } from "react-icons/ci";
 import { Tooltip } from 'react-tooltip';
 
 const Card = ({ card }) => {
-    const RANDOM = Math.floor(Math.random() * (500 - 400) + 10);
+    const RANDOM = Math.floor(Math.random() * (120 - 100) + 10);
 
     return (
         <Link
             to={"/page/apple-s-glowtime"}
-            className="bg-[#d3d3d3]/20 border flex flex-col gap-2 hover:-translate-y-0.5 desktop:[&:nth-child(4n+1)]:col-span-3 desktop:[&:nth-child(4n+1)>img]:aspect-[1036/350]"
+            className="bg-[#d3d3d3]/20 border rounded-xl flex flex-col flex-shrink gap-2 hover:-translate-y-0.5 desktop:[&:nth-child(4n+1)]:col-span-3 desktop:[&:nth-child(4n+1)>img]:aspect-[1036/350]"
         >
-            <img src={`${card.img}/${RANDOM}/1024/768`} alt="Image" loading="lazy" className="border object-cover aspect-[4/3]" />
-            <div className="p-5">
+            <img src={`${card.img}/${RANDOM}/1024/768`} alt="Image" loading="lazy" className="border w-fit object-cover aspect-[4/3] rounded-t-xl" />
+            <div className="p-5 rounded-b-xl">
                 <h2 className="font-bold text-xl">{card.heading}</h2>
                 <p className="line-clamp-2 text-[#a9a9a9] font-bold text-sm leading-6">{card.description}</p>
                 <div className="mt-5 flex justify-between">
