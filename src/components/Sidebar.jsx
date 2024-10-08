@@ -102,20 +102,16 @@ const Sidebar = () => {
                             <MdAddCircleOutline size={24} />
                         </button>
                         <div className="flex flex-col gap-5">
-                            <a className="items-center justify-start flex gap-2"
-                                href="https://pratap.live"
-                                target="_blank"
-                                rel="noreferrer"
+                            <Link className="items-center justify-start flex gap-2"
+                                to={"/"}
                             >
                                 <LiaSearchPlusSolid size={24} />
-                            </a>
-                            <a className="items-center justify-start flex gap-2"
-                                href="https://pratap.live"
-                                target="_blank"
-                                rel="noreferrer"
+                            </Link>
+                            <Link className="items-center justify-start flex gap-2"
+                                to={"/discover"}
                             >
                                 <VscGlobe size={24} />
-                            </a>
+                            </Link>
                             <a className="items-center justify-start flex gap-2"
                                 href="https://pratap.live"
                                 target="_blank"
