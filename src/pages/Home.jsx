@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Tab1 = () => (
+const Home = () => (
   <div className="center-div p-2 flex flex-col">
     <h1 className="text-4xl text-center">
       Welcome to Scalar Field.
@@ -11,4 +11,4 @@ const Tab1 = () => (
   </div>
 )
 
-export default Tab1;
+export default Home;

@@ -4,35 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-
-  [type='text'],
-  [type='email'],
-  [type='url'],
-  [type='password'],
-  [type='number'],
-  [type='date'],
-  [type='datetime-local'],
-  [type='month'],
-  [type='search'],
-  [type='tel'],
-  [type='time'],
-  [type='week'],
-  [multiple],
-  textarea,
-  select {
-    @apply placeholder:text-black/40 w-full font-bold border-none ring ring-1 focus:ring-2 focus:outline-none p-2
-  }
-
-  [type='checkbox'],
-  [type='radio'] {
-    @apply border-2 text-red-500 focus:ring focus:ring-["black"]
-  }
-
-  Link img {
-    @apply border-2 border-red-500
-  }
-}
 
 @layer components {
   .btn {

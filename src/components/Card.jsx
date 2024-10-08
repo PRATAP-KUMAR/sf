@@ -8,7 +8,7 @@ const Card = ({ card }) => {
 
     return (
         <Link
-            to={"/page/apple-s-glowtime"}
+            to={"/page/quantum"}
             className="bg-[#d3d3d3]/20 border rounded-xl flex flex-col flex-shrink gap-2 hover:-translate-y-0.5 desktop:[&:nth-child(4n+1)]:col-span-3 desktop:[&:nth-child(4n+1)>img]:aspect-[1036/350]"
         >
             <img src={`${card.img}/${RANDOM}/1024/768`} alt="Image" loading="lazy" className="border w-fit object-cover aspect-[4/3] rounded-t-xl" />
