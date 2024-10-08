@@ -8,6 +8,7 @@ import { CiMobile4 } from "react-icons/ci";
 import { RiExpandRightLine } from "react-icons/ri";
 import { MdAddCircleOutline } from "react-icons/md";
 import { useSidebarStateContext } from "../hooks/useSidebarStateContext";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
 
@@ -39,22 +40,18 @@ const Sidebar = () => {
                         </div>
                         <button className="w-full bg-white text-xs p-2 rounded-3xl border hover:border-green-900">New Thread <span><kbd className="bg-gray-200 p-1">Ctrl</kbd> <kbd className="bg-gray-200 p-1">I</kbd></span></button>
                         <div className="flex flex-col gap-5">
-                            <a className="items-center justify-start flex gap-2"
-                                href="https://pratap.live"
-                                target="_blank"
-                                rel="noreferrer"
+                            <Link className="items-center justify-start flex gap-2"
+                                to={"/"}
                             >
                                 <LiaSearchPlusSolid size={24} />
                                 <p>Home</p>
-                            </a>
-                            <a className="items-center justify-start flex gap-2"
-                                href="https://pratap.live"
-                                target="_blank"
-                                rel="noreferrer"
+                            </Link>
+                            <Link className="items-center justify-start flex gap-2"
+                                to={"/discover"}
                             >
                                 <VscGlobe size={24} />
                                 <p>Discover</p>
-                            </a>
+                            </Link>
                             <a className="items-center justify-start flex gap-2"
                                 href="https://pratap.live"
                                 target="_blank"
